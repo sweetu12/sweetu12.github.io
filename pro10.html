@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Sitanshu Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header" class="alt">
+					<a href="index.html" class="logo"><strong>SD</strong> <span>Portfolio | Mechanical Engineer</span></a>
+					<nav>
+						<a href="#menu">Menu</a>
+					</nav>
+				</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+						<!--<li><a href="Projects.html">Projects</a></li>-->
+						<li><a href="Courses.html">Courses</a></li>
+						<li><a href="https://drive.google.com/file/d/1fQejyn675wwvYgPdNPgs45zkMsUDf7Vn/view?usp=sharing">Resume</a></li>
+						<!--<li><a href="certifications.html">Certifications</a></li>-->
+					</ul>
+					
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1> Ball Tracking using ROS 2 and OpenCV </h1>
+								
+									</header>
+									<p>The goal of this project is to create a ROS 2 node that detects a tennis ball in a live camera feed and tracks its position. The algorithm uses the OpenCV library for all computer vision tasks and publishes the processed video stream and the ball's coordinates to ROS 2 topics for other nodes to use.</p>
+                  <p> </p>
+                  <p>The core computer vision logic follows these steps:
+
+
+                    Convert to HSV: The input camera image (in BGR format) is converted to the HSV (Hue, Saturation, Value) color space. The HSV space is generally better for color detection under varying lighting conditions compared to BGR or RGB.
+                    
+                    Color Filtering: A binary mask is created by keeping only the pixels that fall within a predefined HSV color range for a greenish-yellow tennis ball.
+
+                    Contour Detection: The outlines (contours) of all the white shapes in the binary mask are found. To reduce noise, the mask is first cleaned up using erosion and dilation operations.
+
+                    Process Contour: The algorithm identifies the largest contour, assuming it is the tennis ball. It then calculates the minimum enclosing circle and the precise center (centroid) of this shape.
+
+                    Visualize: A yellow circle is drawn around the detected ball, and a red dot is placed at its center on the original camera image, which is then published.
+</p>
+                  <iframe width="1691" height="729" src="https://www.youtube.com/embed/B90kC0urchI" title="Ball tracking in ROS2 using OpenCV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>									
+								<p>The primary weakness of this method is its reliance on static color filtering. It is vulnerable to significant changes in lighting conditions. If a shadow falls on the ball or the ambient light changes, the ball's HSV values can shift outside the predefined range, causing the detection to fail.</p>
+                <li><a href="https://github.com/sweetu12/Ball-track-ROS2-OpenCV" class="button">Code</a></li>
+                  <p>Requirements:
+                  
+                    ROS 2 Jazzy
+
+                    Ubuntu 24.04 LTS
+
+                    OpenCV 4.x (Installed via python3-opencv)
+
+                    ros-jazzy-cv-bridge
+
+                    ros-jazzy-usb-cam</p>
+                </div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">sitanshu@buffalo.edu</a>
+										<a href="#">2003sitanshu@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(716) 520-4328</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>
+										Buffalo, NY-14214<br />
+										United States of America</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://github.com/sweetu12" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/sitanshu12/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; </li><li> <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

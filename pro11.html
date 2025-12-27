@@ -45,12 +45,13 @@
                                                         <section id="one">
                                                                 <div class="inner">
                                                                         <header class="major">
-                                                                                <h2>Autonomous Mobile Robot Simulation</h2>
+                                                                                <h2>MARVEL — Mars Methane Analysis & Remote Vehicle for Exploration and Learning</h2>
                                                                         </header>
-                                                                        <p>I built a simulated navigation stack for an autonomous mobile robot using ROS 2 and Gazebo, focusing on reliable localization and obstacle-aware routing. The project paired behavior trees with the Nav2 stack and RViz visualizations so that the robot could plan, monitor, and update its course through a warehouse-style map.</p>
-                                                                        <p>Key contributions included tuning sensor models for lidar and depth cameras, configuring SLAM and AMCL pipelines for robust pose estimation, and wiring velocity commands into a differential-drive controller. I also automated map generation and waypoint missions with launch files, letting the robot trace repeatable inspection routes while reacting to new obstacles.</p>
+                                                                        <p>MARVEL is a conceptual Mars exploration mission designed to resolve inconsistencies in methane detection observed by prior missions (Curiosity, TGO). The mission integrates a low-Mars-orbit satellite with advanced spectrometers and a surface exploration vehicle capable of sampling atmospheric and subsurface methane. In this MAE 460 course, our group initiated a 4-stage Systems review (SRR, PDR, CDR, FDR) with the help of our mentor, Steve Matousek- Mars Exploration Program Advanced Studies Office Manager @ NASA JPL, and our Professor, Javid Bayandor.</p>
+                                                                        <p>The primary objective is to locate, characterize, and determine the origin (biotic vs abiotic) of methane emissions on Mars while operating within realistic cost, schedule, and technology constraints consistent with NASA mission planning.</p>
                                                                         <ul class="actions">
-                                                                                <li><a href="https://youtu.be/3bVQuY8L9is" class="button">Demo Walkthrough</a></li>
+                                                                                <li><a href="https://drive.google.com/file/d/1aJf6XqAWNsNrXD7f1JxVC0P8HAu2jJn1/view?usp=sharing" class="button">Final Report (PDF)</a></li>
+                                                                                <li><a href="https://drive.google.com/drive/folders/1KsSHJ-Opb1ZeqdnoyzMz95KpfQpj_EJC?usp=sharing" class="button">Other Files</a></li>
                                                                         </ul>
                                                                 </div>
                                                         </section>
@@ -64,9 +65,19 @@
                                                                         <div class="content">
                                                                                 <div class="inner">
                                                                                         <header class="major">
-                                                                                                <h3>Navigation stack configuration</h3>
+                                                                                                <h3>My Role & Contributions</h3>
                                                                                         </header>
-                                                                                        <p>Configured Nav2 planners and controllers, balancing smooth trajectories with fast replanning. Added behavior-tree nodes for goal retries and collision recovery so the robot could escape tight aisles without human input.</p>
+                                                                                        <p> As a Systems Engineer, I,
+                                                                                                <ul>
+                                                                                                  <li>Led mechanical and systems-level design for key spacecraft and mission subsystems</li>
+                                                                                                  <li>Contributed to satellite structural layout, subsystem integration, and mass/power budgeting</li>
+                                                                                                  <li>Performed orbital mechanics and ground coverage calculations for a low-Mars-orbit science mission</li>
+                                                                                                  <li>Supported scientific instrument selection and trade studies, including IR and UV-VIS spectrometers</li>
+                                                                                                  <li>Worked through thermal, power, propulsion, ADCS, and communications considerations at FDR depth</li>
+                                                                                                  <li>Collaborated in a multidisciplinary team following NASA-style systems engineering workflow</li>
+                                                                                                </ul>
+
+                                                                                        </p>
                                                                                 </div>
                                                                         </div>
                                                                 </section>
@@ -77,9 +88,83 @@
                                                                         <div class="content">
                                                                                 <div class="inner">
                                                                                         <header class="major">
-                                                                                                <h3>Simulation and validation</h3>
+                                                                                                <h3>Technical Highlights</h3>
                                                                                         </header>
-                                                                                        <p>Modeled lidar, IMU, and depth sensors to mirror real-world noise, then validated localization with loop-closure paths and deliberate obstacle insertions. Collected bag files to profile latency, CPU load, and controller stability for future hardware deployment.</p>
+                                                                                        <p>
+                                                                                                <ul>
+                                                                                                        <li>Mission Architecture: Orbiter + surface vehicle (rover / aerial sampling concepts)</li>
+                                                                                                        <li>Science Payload: Multi-channel IR & UV-VIS spectrometers for CH₄ and hydrocarbon detection</li>
+                                                                                                        <li>Orbit Design: ~300 km circular Mars orbit for improved spatial resolution</li>
+                                                                                                        <li>Propulsion: Hall-effect thrusters + bipropellant attitude control</li>
+                                                                                                        <li>Power System: Multi-junction GaAs solar arrays + Li-ion batteries</li>
+                                                                                                        <li>ADCS: Reaction wheels, star trackers, sun sensors, IMU (with redundancy)</li>
+                                                                                                        <li>Sampling Concepts: Atmospheric sorbent tubes, subsurface drilling, ground-penetrating radar</li>
+                                                                                                        <li>Analysis Depth: Mass, power, thermal, orbital period, ground coverage, and SNR considerations</li>
+                                                                                                </ul>
+                                                                                        </p>
+                                                                                </div>
+                                                                        </div>
+                                                                </section>
+
+                                                                <section>
+                                                                        <a href="" class="image">
+                                                                                <img src="images/obstacleavoidv2.gif" alt="" data-position="center center" />
+                                                                        </a>
+                                                                        <div class="content">
+                                                                                <div class="inner">
+                                                                                        <header class="major">
+                                                                                                <h3>Tools & Methods</h3>
+                                                                                        </header>
+                                                                                        <p>
+                                                                                                <ul>
+                                                                                                        <li>Systems Engineering (SRR, PDR, CDR, FDR, documentation)</li>
+                                                                                                        <li>CAD & mechanical layout concepts, Fusion360, SolidWorks</li>
+                                                                                                        <li>Orbital mechanics (General Mission Analysis Tool (GMAT)) & spacecraft power calculations</li>
+                                                                                                        <li>Trade studies and requirement-driven design</li>
+                                                                                                        <li>Team-based aerospace design reviews</li>
+                                                                                                        
+                                                                                                </ul>
+                                                                                        </p>
+                                                                                </div>
+                                                                        </div>
+                                                                </section>
+                                                                <section>
+                                                                        <a href="" class="image">
+                                                                                <img src="images/obstacleavoidv2.gif" alt="" data-position="top center" />
+                                                                        </a>
+                                                                        <div class="content">
+                                                                                <div class="inner">
+                                                                                        <header class="major">
+                                                                                                <h3>Deliverables</h3>
+                                                                                        </header>
+                                                                                        <p>
+                                                                                                <ul>
+                                                                                                        <li>Detailed End-to-end NASA-style reports and presentations at every stage of the project </li>
+                                                                                                        <li>Mission architecture diagrams & subsystem breakdowns</li>
+                                                                                                        <li>Quantitative mass, power, and performance analyses</li>
+                                                                                                        
+                                                                                                </ul>
+                                                                                        </p>
+                                                                                </div>
+                                                                        </div>
+                                                                </section>
+                                                                <section>
+                                                                        <a href="" class="image">
+                                                                                <img src="images/obstacleavoidv2.gif" alt="" data-position="center center" />
+                                                                        </a>
+                                                                        <div class="content">
+                                                                                <div class="inner">
+                                                                                        <header class="major">
+                                                                                                <h3>What I’d Improve Next?</h3>
+                                                                                        </header>
+                                                                                        <p>
+                                                                                                <ul>
+                                                                                                        <li>Implement recent AI model breakthroughs to increase onboard autonomy for adaptive nighttime methane sampling </li>
+                                                                                                        <li>Refine thermal modeling with transient orbital heating cases</li>
+                                                                                                        <li>Optimize payload SNR vs power using detector cooling trade studies</li>
+                                                                                                        
+                                                                                                </ul>
+                                                                                        </p>
                                                                                 </div>
                                                                         </div>
                                                                 </section>
